@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COOPERATIVA DE TRABAJO POLILU Ltda.</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+
+
+    <div class="container">
+        <div class="header">
+            <!--<h2>Anticipo de Retorno</h2> -->
+            <img src="Coop1.png" alt="Logo de Cooperativa de Trabajo POLILU Itda." width="100%">
+        </div>
+        <div class="numero">
+            <p id="seguir"></p>
+        </div>
+        <form id="form" class="form">
+
+            <div class="flexColumna">
+                <div class="form-control">
+                    <label for="datos">Lugar y Fecha</label>
+                    <input type="text" placeholder="Lugar y Fecha" id="datos" />
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <small>Error message</small>
+                </div>
+
+                <div class="form-control espacio">
+                    <label for="numero">Número Asociado</label>
+                    <input type="text" placeholder="Número Asociado" id="numero" />
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <small>Error message</small>
+                </div>
+            </div>
+
+            <div class="flexColumna">
+
+                <div class="form-control">
+                    <label for="soy">Apellido y Nombre</label>
+                    <input type="text" placeholder="Apellido y Nombre" id="soy" />
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <small>Error message</small>
+                </div>
+                <div class="form-control espacio">
+                    <label for="cuit">CUIT</label>
+                    <input type="cuit" placeholder="CUIT" id="cuit" />
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <small>Error message</small>
+                </div>
+            </div>
+
+            <div class="form-control">
+                <label for="direccion">Direccion</label>
+                <input type="direccion" placeholder="Direccion" id="direccion" />
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error message</small>
+            </div>
+
+            <div class="flexColumna">
+                <div class="form-control">
+                    <label for="periodo">Periodo Liquidado</label>
+                    <input type="periodo" placeholder="Detallar: Quincena/Mensual" id="periodo" />
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <small>Error message</small>
+                </div>
+                <div class="form-control espacio">
+                    <label for="pago">Medio de Pago</label>
+                    <input type="pago" placeholder="Detallar: Efectivo/Deposito Bancario" id="pago" />
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <small>Error message</small>
+                </div>
+            </div>
+
+            <div class="form-control">
+                <label for="pesos">Importe Liquidado</label>
+                <input type="pesos" placeholder="Indicar el valor en pesos" id="pesos" />
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error message</small>
+            </div>
+
+            <div class="form-control">
+                <label for="retencion">Retenciones</label> <input type="retencion" placeholder="Detallar item de retencion" id="pesos" />
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error message</small>
+            </div>
+
+            <div class="form-control">
+                <label for="pagar">Total a PAGAR:</label>
+                <input type="pagar" placeholder="Monto en pesos" id="pesos" />
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error message</small>
+            </div>
+
+            <div class="form-controlA">
+                <label for="recibi">Recibi conforme la suma de pesos</label>
+                <input type="recibi" placeholder="$" id="pesos" />
+                <label for="pesos">en concepto de retribucion por mi aporte como trabajador asociado</label>
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+
+            </div>
+
+
+            <div class="form-control espacio1">
+                <div class="firma">
+                    <div class="box"></div>
+                    <p class="texto">Firma Asociado / Firma Cooperativa</p>
+                </div>
+            </div>
+
+            <!--<div class="form-control espacio1">
+                <div class="firma">
+                    <div class="box"></div>
+                    <p class="texto">Firma Cooperativa</p>
+                </div>
+            </div>-->
+
+            <!--<button></button>-->
+            <input type="button" value="Imprimir" onclick="main:window.print(); add()" class="imprime" />
+
+        </form>
+
+        <a href="main:window.print()"></a>
+
+    </div>
+    <script src="main.js"></script>
+
+</body>
+
+</html>
